@@ -1,0 +1,464 @@
+/* start rules */
+* {
+  max-width: 100%;
+}
+p {
+  margin: 0 !important;
+}
+body {
+  font-family: "Nunito", sans-serif;
+}
+
+:root {
+  --padding-Top: 60px;
+  --padding-Bottom: 60px;
+  --main-Color: #4b8ef1;
+  --secound-Color: #555;
+  --main-Transition: 0.5s;
+}
+
+/* end rules */
+/* start slider */
+.slider {
+  background-image: linear-gradient(white, #4b8ef1);
+  height: 100vh;
+}
+/* start navbar */
+.slider .navbar {
+  padding: 25px 0;
+  border-bottom: 2px solid white;
+}
+
+.slider .navbar-brand {
+  color: var(--main-Color);
+  text-transform: capitalize;
+  font-size: 30px;
+  font-weight: bold;
+}
+.slider .navbar .nav-link.active {
+  color: var(--main-Color);
+}
+.slider .navbar .nav-link {
+  text-transform: capitalize;
+  margin-left: 10px;
+  font-size: 20px;
+  color: black;
+  font-weight: 600;
+  transition: var(--main-Transition);
+}
+.slider .navbar .nav-link:hover {
+  color: var(--main-Color);
+}
+/* end navbar */
+
+.slider .text-content {
+  margin: 200px 0;
+}
+
+@media (max-width: 1199.98px) {
+  .slider .text-content {
+    margin: 40px 0;
+    text-align: center;
+  }
+}
+
+.slider .text-content .text h1 {
+  text-transform: capitalize;
+  font-size: 50px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+@media (max-width: 575.98px) {
+  .slider .text-content .text h1 {
+    font-size: 35px;
+  }
+}
+.slider .text-content .text p {
+  color: var(--secound-Color);
+  margin-bottom: 40px;
+}
+.slider .text-content .text button {
+  text-transform: capitalize;
+  font-weight: bold;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 25px;
+  border: none;
+  background-color: var(--main-Color);
+  margin-right: 20px;
+  transition: var(--main-Transition);
+}
+@media (max-width: 575.98px) {
+  .slider .text-content .text button {
+    padding: 5px 10px;
+  }
+}
+.slider .text-content .text button:hover {
+  color: black;
+  background-color: white;
+}
+
+@media (max-width: 575.98px) {
+  .slider .text-content .image {
+    margin-top: 100px;
+  }
+}
+@media (max-width: 1199.98px) {
+  .slider .text-content .image {
+    margin-top: 30px;
+  }
+  .slider .text-content .image img {
+    max-width: 70%;
+  }
+}
+.slider .text-content .image img {
+  width: 90%;
+}
+/* end slider */
+
+/* start servies */
+.servies {
+  padding-top: var(--padding-Top);
+  padding-bottom: var(--padding-Bottom);
+}
+.servies .text {
+  margin-bottom: 80px;
+}
+.servies .text h1 {
+  font-size: 30px;
+  text-align: center;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin: 40px 0;
+}
+.servies .text h1 span {
+  color: var(--main-Color);
+}
+.servies .text p {
+  text-align: center;
+  padding: 0 20%;
+}
+
+.servies .box {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+.servies .box .content {
+  position: relative;
+  z-index: 1;
+  padding: 30px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  border-radius: 10px;
+  border-top-right-radius: 50px;
+  transition: all var(--main-Transition);
+}
+
+.servies .box .content:hover {
+  background-image: url("/image/service-bg.jpg");
+  background-position: right top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  cursor: pointer;
+  color: white;
+}
+
+.servies .box .content img {
+  max-width: 100%;
+  margin: 20px 0 20px 10px;
+}
+
+.servies .box .content h4 {
+  text-transform: capitalize;
+  font-weight: bold;
+  font-size: 20px;
+}
+.servies .box .content p {
+  margin: 20px 0;
+}
+.servies .box button {
+  background: none;
+  text-transform: capitalize;
+  border: none;
+  font-size: 20px;
+  color: var(--main-Color);
+  font-weight: bold;
+}
+.servies .box:hover button {
+  color: white;
+}
+
+/* end servies */
+
+/* start about */
+.about {
+  padding-top: var(--padding-Top);
+  padding-bottom: var(--padding-Bottom);
+}
+.about .about-text h1 {
+  font-size: 30px;
+  text-transform: capitalize;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin: 16px 0;
+}
+.about .about-text h1 span {
+  color: var(--main-Color);
+}
+.about .about-text > p {
+  color: var(--secound-Color);
+  margin-bottom: 30px;
+}
+.about .about-text .box .box-text {
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.07);
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 40px;
+  margin-bottom: 30px;
+}
+.about .about-text .box .box-text h4 {
+  font-size: 20px;
+  font-weight: bold;
+    
+}
+.about .about-text .box .box-text p {
+  color: var(--secound-Color);
+  
+}
+.about .about-text .box .box-text:hover p {
+  color: white;
+}
+.about .about-text .box .box-text:hover {
+  background-color: var(--main-Color);
+  color: white;
+  cursor: pointer;
+}
+.about .about-text > h4 {
+  background: linear-gradient(to right, var(--main-Color), blue);
+  width: fit-content;
+  padding: 5px 20px;
+  border-radius: 25px;
+  color: white;
+  font-size: 20px;
+}
+.about .about-text h5 {
+    font-size: 18px;
+    margin: 20px 0;
+    color: var(--secound-Color);
+}
+.about .about-image img {
+    max-width: 100%;
+}
+/* end about */
+
+
+/* start clients */
+.clients {
+    padding-top: var(--padding-Top);
+    padding-bottom: var(--padding-Bottom);
+}
+
+.clients h1 {
+    font-size: 30px;
+    text-align: center;
+    font-weight: bold;
+    margin: 16px 0;
+}
+.clients h1 span {
+    color: var(--main-Color);
+}
+
+.clients p {
+    color: var(--secound-Color);
+    text-align: center;
+    padding: 0 25%;
+    margin-bottom: 60px;
+}
+.clients .clinents-content .up {
+  margin: 30px;
+}
+.clients .clinents-content .box h4 {
+  text-transform: capitalize;
+  font-size: 22px;
+  font-weight: bold;
+  padding: 0;
+}
+.clients .clinents-content .box span {
+  text-transform: capitalize;
+  color: #afafaf;
+  text-align: center;
+  
+  
+
+}
+
+.clients .clinents-content .app span {
+  font-weight: bold;
+  text-transform: capitalize;
+  color: #afafaf;
+}
+
+
+
+.clients .clinents-content .icon .fa-regular  {
+  background-color: var(--main-Color);
+}
+.clients .clinents-content .clients-two .text h3 {
+  background-color: var(--main-Color);
+  padding: 50px;
+  border-radius: 50px;
+  font-size: 25px;
+  color: white;
+}
+
+.clients .clinents-content .clients-two .image img {
+  border-radius: 50%;
+}
+.clients .clinents-content .clients-two .image h4 {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+.clients .clinents-content .clients-two .image .name{
+  display: inline-block;
+  margin-left: 20px;
+  margin-top: 100px;
+}
+.clients .clinents-content .clients-two .image .name h4 {
+  font-weight: bold;
+ 
+}
+.clients .clinents-content .clients-two .image .name span {
+  display: block;
+  margin-left: 20px;
+}
+/* end clients */
+
+
+/* start price  */
+.price {
+  padding-top: var(--padding-Top);
+  padding-bottom: var(--padding-Bottom);
+}
+
+.price h1 {
+  font-size: 30px;
+  text-align: center;
+  font-weight: bold;
+  margin: 16px 0;
+}
+
+.price h1 span {
+  color: var(--main-Color);
+}
+
+
+.price p {
+  text-align: center;
+  padding: 0;
+}
+.price .content {
+  margin-top: 60px;
+
+
+
+}
+.price .content .box {
+  text-align: center;
+  background-color: var(--main-Color);
+  padding: 60px;
+  color: white;
+  border-radius: 100px;
+  margin-top: 40px;
+}
+.price .content .box h3 {
+  margin: 20px 0;
+}
+.price .content .box p {
+  margin: 20px 0;
+}
+
+.price .content .box button {
+  padding: 15px;
+  border: none;
+  background-color: white;
+  border-radius: 25px;
+  font-weight: bold;
+  font-size: 18px;
+  margin-top: 20px;
+}
+/* end price */
+
+/* start newslette */ 
+.newsletter {
+  padding-top: var(--padding-Top);
+  padding-bottom: var(--padding-Bottom);
+  text-align: center;
+  padding:  0 20%;
+  background-image: linear-gradient(white, var(--main-Color), var(--main-Color));
+}
+.newsletter h1 {
+  margin-top: 100px;
+  text-transform: capitalize;
+  font-weight: bold;
+}
+
+.newsletter form {
+  padding: 40px 0;
+}
+.newsletter form input {
+  width: 30%;
+    border: none;
+    border-bottom: 2px solid white;
+
+    background: var(--main-Color);
+}
+.newsletter form input::placeholder {
+  text-transform: capitalize;
+  color: white;
+}
+
+.newsletter form submit {
+  text-transform: capitalize;
+  border: 2px solid white;
+  padding: 10px 40px;
+  border-radius: 25px;
+  margin-left: 25px;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+@media (max-width: 767.98px) { 
+  .newsletter h1  {
+    font-size: 30px;
+  }
+  .newsletter form submit {
+  display: block;
+  margin-top: 20px;
+ }
+ .newsletter form input {
+  width: 50%;
+ }
+ .newsletter form input::placeholder  {
+  text-align: center;
+ }
+}
+
+/* end newslette */
+
+
+/* start footer */
+.footer {
+  background-color: black;
+  color: white;
+  
+}
+
+
+
+
+/* end footer */ 
+
+
